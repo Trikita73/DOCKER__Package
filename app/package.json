@@ -1,12 +1,12 @@
 {
-  "name": "nodejs-backend",
+  "name": "app",
   "version": "1.0.0",
-  "description": "",
+  "description": "docker-package",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "TriKita73",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
