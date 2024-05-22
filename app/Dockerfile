@@ -8,9 +8,6 @@ WORKDIR /app
 COPY package.json . 
 COPY package-lock.json .
 
-# Проверяем наличие файлов
-RUN ls -al /app
-
 # Устанавливаем зависимости
 RUN npm ci
 

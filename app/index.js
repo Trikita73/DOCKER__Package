@@ -6,4 +6,8 @@ app.get('/', (_, res) => res.send('<h1>OK</h1>'))
 
 const port = 8080
 
-app.listen(port, () => console.log(`Server has been started on port ${port}`))
+const server = app.listen(port, () => console.log(`Server has been started on port ${port}`))
+
+process.on('SIGINT', () => server.close())
+
+process.on('SIGTERM', () => server.close())
