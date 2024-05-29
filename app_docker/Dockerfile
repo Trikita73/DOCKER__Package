@@ -18,4 +18,4 @@ COPY index.js .
 EXPOSE 8080
 
 # Указываем команду по умолчанию
-CMD ["node", "index.js"]
+CMD ["node", "index.js"] 
