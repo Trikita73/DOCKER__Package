@@ -2,7 +2,7 @@ FROM node:20.11.1-alpine as build
 WORKDIR /app
 COPY package.json .
 COPY package-lock.json .
-RUN npm ci
+RUN npm ci 
 COPY . .
 RUN npm run build 
 
