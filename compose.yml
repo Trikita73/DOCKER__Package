@@ -1,0 +1,11 @@
+services:
+
+  app_docker:
+    image: trikitadoc73/app_docker:v0.1.0
+    ports:
+      - 8081:8080
+
+  app_react_js:
+    image: app_react_js
+    ports:
+      - 8080:80
